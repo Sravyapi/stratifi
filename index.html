@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>StratiFi</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 left-menu-png">
+            <ul>
+                <li><a>Dashboard</a></li>
+                <li class="active"><a>PRISM Rating&#8482;</a></li>
+                <li><a>Clients</a></li>
+                <li><a>Allocations</a></li>
+                <li><a>Model Portfolios</a></li>
+                <li><a>Overlay Strategies</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-10 layer-1">
+            <div class="row">
+                <div class="col-sm-9 what-we-recommend">
+                    What We Recommend
+                </div>
+                <div align="right" class="col-sm-3 rounded-rectangle-2-copy-3">
+                    <button class="btn btn-color">Generate PDF Report</button>
+                </div>
+            </div>
+            <div class="rectangle-1063">
+                Your PRISM score can be lowered with <a href="">StratiFi overlays</a>. Following charts show how StratiFi Overlays can lower the risk of your portfolio with StratiFi recommended overlay blendings.    
+            </div>
+            <div class="portfolio-50-tail-risk-50-risk">
+                Portfolio + <a href="">50% Tail Risk, 50% Risk Reduction</a>
+            </div>
+            <div class="rectangle-1059">
+                <div class="row">
+                    <div class="col-sm-6"> AA
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+
+                            <div id="demo-bar" class="col-sm-7">
+                            </div>
+                            <div class="labels">
+                                <span class="col-sm-5">Volatility</span>
+                            </div>
+
+
+                            <div id="demo-bar2" class="col-sm-7">
+                            </div>  
+                            <div class="labels">
+                                <span class="col-sm-5">Correlation Risk</span>
+                            </div>  
+
+
+                            <div id="demo-bar3" class="col-sm-7">
+                            </div>   
+                            <div class="labels">
+                                <span class="col-sm-5">Tail Event</span>
+                            </div>
+
+
+                            <div id="demo-bar4" class="col-sm-7">
+                            </div>  
+                            <div class="labels">
+                                <span class="col-sm-5">Concetrated Stack</span>
+                            </div>
+                        </div>            
+                    </div>
+                </div>
+                        
+                <script src="js/gradient-progress-bar.js"></script>
+        
+        
+                <script src="js/jquery.barfiller.js" type="text/javascript"></script>
+                <script type="text/javascript">
+                $(document).ready(function(){
+                    $('#demo-bar').gradientProgressBar({
+                        value: 1,
+                        fill: {
+                            gradient: ["#62ce02", "#62ce02","#f39f09","#f39f09", "#f39f09","#c93539", "#c93539"]
+                        }
+                    });
+            
+                    $('#demo-bar2').gradientProgressBar({
+                        value: 0.75,
+                        fill: {
+                            gradient: ["#62ce02", "#62ce02","#f39f09","#f39f09", "#f39f09", "#c93539", "#c93539"]
+                        }
+                    });
+
+                    $('#demo-bar3').gradientProgressBar({
+                        value: 0.8,
+                        fill: {
+                            gradient: ["#62ce02", "#62ce02","#f39f09","#f39f09","#f39f09", "#c93539", "#c93539"]
+                        }
+                    });
+
+                    $('#demo-bar4').gradientProgressBar({
+                        value: 0.9,
+                        fill: {
+                            gradient: ["#62ce02","#62ce02", "#f39f09","#f39f09","#f39f09", "#c93539", "#c93539"],
+                        }
+                    });
+
+                    $('canvas').addClass("barfiller");
+                });
+
+                </script>
+
+            </div>
+        </div>
+    </div>
+    </div>
+<!-- <script src="js/scripts.js"></script> -->
+</body>
+</html>

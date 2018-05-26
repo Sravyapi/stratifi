@@ -1,0 +1,143 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.layer-1 {	
+    height: 3241px;	
+    width: 1151px;
+    background-color:#EFF3F4;
+}
+
+.left-menu-png {	
+    height: 832px;	
+    width: 215px;
+    margin: 0;
+    padding: 0;
+    background-color:#202A2B;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #202A2B;
+    color: #6A757B;
+}
+
+li a {
+    display: block;
+    margin: 0;
+    padding: 10px 20px;
+    width: 100%;
+    font-weight: bold;
+}
+
+li a:hover, .active {
+    background-color: #13181B;
+    color: #FBFBFB;
+    border-left: 10ch;
+    border-left-color: #71C2CE;
+
+}
+
+.what-we-recommend {
+	height: 94px;
+	width: 217px;
+	color: #394346;
+	font-family: Roboto;
+	font-size: 22px;
+	font-weight: bold;
+    line-height: 20px;
+    display: block;
+    padding-top: 58px; 
+    padding-bottom: 18px;
+}
+
+.rounded-rectangle-2-copy-3 {
+
+    padding-top: 40px; 
+    padding-right: 79px;
+	height: 32px;
+    width: 180px;
+    margin-bottom: 52px;
+}
+
+.btn-color {
+    color: white;
+    background-color: #09ACF8;
+    padding: 6px 20px;
+}
+
+.rectangle-1063 {
+	height: 67px;
+    width: 1106px;
+    display: block;
+    background-color: #D3D6DB;
+    padding: 15px 61px 16px 18px;
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    color: #394346;
+    
+}
+
+.portfolio-50-tail-risk-50-risk {
+    margin-top: 35px;
+	height: 16px;
+	width: 324px;
+	color: #394346;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+}
+
+.rectangle-1059 {
+    margin-top: 11px;
+	height: 208px;
+	width: 1104px;
+	border: 1px solid #D9E1E4;
+    background-color: #FFFFFF;
+    padding-top: 42px;
+    padding-bottom: 50px;
+}
+
+body {
+    font-family: Arial;
+    background:#eee;
+}
+
+.barfiller {
+    padding: 0px;
+	font-size: 16px;
+    width:333px;
+    height:10px;
+    background:#fcfcfc;
+    border:1px solid #ccc;
+    position:relative;
+    margin-top:5px;
+    margin-bottom: 10px;
+    box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,.5); 
+    -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,.5); 
+}
+
+.barfiller .fill {
+    display:block;
+    position:relative;
+    width: 0%;
+    height:100%;
+    background:#333;
+    z-index:1;
+    padding: 0px;
+}
+
+  .labels {
+	color: #394346;
+	font-family: Roboto;
+	font-size: 16px;
+    padding: 0px;
+    padding-left: 15px;
+    font-weight: bold;
+}
