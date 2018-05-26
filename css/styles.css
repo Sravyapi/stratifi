@@ -144,13 +144,14 @@ body {
 }
 
 .progress {
-  position: relative;
+  position: absolute;
   display: inline-block;
   padding: 0;
   text-align: center;
   width: 200px;
   height: 200px;
-  background-color: white;
+  background-color: transparent;
+  opacity: 0.8;
 }
 .progress > li {
   display: inline-block;
@@ -189,7 +190,10 @@ body {
           transform: rotate(-90deg);
 }
 
-
+.abso {
+  position: absolute;
+  background-color: transparent;
+}
 .progress svg:nth-child(2) path {
   fill: none;
   stroke-width: 15;
@@ -212,4 +216,20 @@ body {
 .bar-padding{
   margin-top: 42px;
   margin-bottom: 50px;
+}
+
+.progress .back {
+    position: absolute;
+    background: transparent;
+    background-color: #fff;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    top: 17px;
+    left: 17px;
+    border-radius: 50%;
+    border-right: 8px solid #c4fffa;
+    border-left: 8px solid #b5e6fd;
+    border-top: 8px solid #c4fffa;
+    border-bottom: 8px solid #b5e6fd;
+    -webkit-transform: rotateZ(45deg)
 }
