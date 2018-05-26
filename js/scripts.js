@@ -28,25 +28,23 @@ $(document).ready( function () {
     });
 
     $('canvas').addClass("barfiller");
+    $('#progress-length').attr('stroke-dashoffset',parseFloat($('#percentage').attr('data-percent'))*62.9)
 
-    var clock = jQuery("#multi").radialMultiProgress("init", {
-      'fill': 10,
-      'font-size': 14,
-      'data': [
-        {'color': "#2DB1E4", 'range': [0, 59]},
-        {'color': "#9CCA13", 'range': [0, 59]}
-      ]
+    var percent = parseFloat($("#percentage").attr("data-percent"));
+
+    if(percent > 6.66){
+        $(".risk").css("color","#c93539");
+        $('.progress > li').css("color","#c93539");
+        $('.risk').text("High Risk");
+    } else if (percent > 3.33) {
+        $(".risk").css("color","#f39f09");
+        $('.progress > li').css("color","#f39f09");
+        $('.risk').text("Moderate Risk");
+    }
+
+    $('ul > li').click(function() {
+        $('ul > li').removeClass('active');
+        $(this).addClass('active');
     });
-
-    clock.radialMultiProgress("to", {
-      "index": 0,
-      'perc': 30
-    });
-
-    clock.radialMultiProgress("to", {
-      "index": 1,
-      'perc': 15
-    });
-
 
 });

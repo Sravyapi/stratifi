@@ -1,8 +1,9 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+/*https://projects.invisionapp.com/d/main/default/#/console/13735814/295672424/inspect */
 .layer-1 {
-    height: 3241px;
     width: 1151px;
     background-color:#EFF3F4;
 }
@@ -14,8 +15,6 @@ body {
     padding: 0;
     background-color:#202A2B;
 }
-
-
 
 ul {
     list-style-type: none;
@@ -34,21 +33,24 @@ li a {
     font-weight: bold;
 }
 
-li a:hover, .active {
+ul > li a:hover, .active {
     background-color: #13181B;
     color: #FBFBFB;
-    border-left: 10ch;
+    border-style: solid;
     border-left-color: #71C2CE;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
 
 }
 
 .what-we-recommend {
-	height: 94px;
-	width: 217px;
-	color: #394346;
-	font-family: Roboto;
-	font-size: 22px;
-	font-weight: bold;
+  	height: 94px;
+  	width: 217px;
+  	color: #394346;
+  	font-family: Roboto;
+  	font-size: 22px;
+  	font-weight: bold;
     line-height: 20px;
     display: block;
     padding-top: 58px;
@@ -56,10 +58,9 @@ li a:hover, .active {
 }
 
 .rounded-rectangle-2-copy-3 {
-
     padding-top: 40px;
     padding-right: 79px;
-	height: 32px;
+	  height: 32px;
     width: 180px;
     margin-bottom: 52px;
 }
@@ -71,7 +72,7 @@ li a:hover, .active {
 }
 
 .rectangle-1063 {
-	height: 67px;
+	  height: 67px;
     width: 1106px;
     display: block;
     background-color: #D3D6DB;
@@ -85,20 +86,20 @@ li a:hover, .active {
 
 .portfolio-50-tail-risk-50-risk {
     margin-top: 35px;
-	height: 16px;
-	width: 324px;
-	color: #394346;
-	font-family: Roboto;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 20px;
+  	height: 16px;
+  	width: 324px;
+  	color: #394346;
+  	font-family: Roboto;
+  	font-size: 16px;
+  	font-weight: 500;
+  	line-height: 20px;
 }
 
 .rectangle-1059 {
     margin-top: 11px;
-	height: 208px;
-	width: 1104px;
-	border: 1px solid #D9E1E4;
+  	height: 208px;
+  	width: 1104px;
+  	border: 1px solid #D9E1E4;
     background-color: #FFFFFF;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -111,7 +112,7 @@ body {
 
 .barfiller {
     padding: 0px;
-	font-size: 16px;
+	  font-size: 16px;
     width:333px;
     height:10px;
     background:#fcfcfc;
@@ -123,10 +124,10 @@ body {
     -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,.5);
 }
 
-  .labels {
-	color: #394346;
-	font-family: Roboto;
-	font-size: 16px;
+.labels {
+  	color: #394346;
+  	font-family: Roboto;
+  	font-size: 16px;
     padding: 0px;
     padding-left: 15px;
     font-weight: bold;
@@ -144,78 +145,75 @@ body {
 }
 
 .progress {
-  position: absolute;
-  display: inline-block;
-  padding: 0;
-  text-align: center;
-  width: 200px;
-  height: 200px;
-  background-color: transparent;
-  opacity: 0.8;
+    margin-left: 15px;
+    position: absolute;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    opacity: 0.8;
 }
 .progress > li {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  color: #62ce02;
-  font-family: 'Roboto';
-  font-weight: 100;
-  margin: 2rem;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #62ce02;
+    font-family: 'Roboto';
+    font-weight: 100;
+    margin: 2rem;
 }
 .progress > li:before {
-  content: attr(data-name);
-  position: absolute;
-  width: 100%;
-  bottom: -2rem;
-  font-weight: 400;
+    content: attr(data-name);
+    position: absolute;
+    width: 100%;
+    bottom: -2rem;
+    font-weight: 400;
 }
 .progress > li:after {
-  content: attr(data-percent);
-  position: absolute;
-  width: 100%;
-  top: 1.9rem;
-  left: 0;
-  font-size: 3rem;
-  text-align: inherit;
+    content: attr(data-percent);
+    position: absolute;
+    width: 100%;
+    top: 1.9rem;
+    left: 0;
+    font-size: 3rem;
+    text-align: inherit;
 }
 .progress svg {
-  width: 140px;
-  height: 140px;
+    width: 140px;
+    height: 140px;
 }
 .progress svg:nth-child(2) {
-  position: absolute;
-  left: 0;
-  top: 0;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
 }
 
-.abso {
-  position: absolute;
-  background-color: transparent;
-}
 .progress svg:nth-child(2) path {
-  fill: none;
-  stroke-width: 15;
-  stroke-dasharray: 629;
-  stroke: #d3d6db;
-  opacity: .9;
-  -webkit-animation: load 2s;
-          animation: load 2s;
+    fill: none;
+    stroke-width: 15;
+    stroke-dasharray: 629;
+    stroke: #d3d6db;
+    opacity: .9;
+    -webkit-animation: load 2s;
+            animation: load 2s;
 }
 
 #out {
-  position: absolute;
-  margin-top: 123px;
-  margin-left: 74px;
-  font-size: 14px;
-  color: #93969b;
-  font-family: 'Roboto';
+    position: absolute;
+    margin-top: 123px;
+    margin-left: 74px;
+    font-size: 14px;
+    color: #93969b;
+    font-family: 'Roboto';
 }
 
 .bar-padding{
-  margin-top: 42px;
-  margin-bottom: 50px;
+    margin-top: 42px;
+    margin-bottom: 50px;
 }
 
 .progress .back {
@@ -232,4 +230,16 @@ body {
     border-top: 8px solid #c4fffa;
     border-bottom: 8px solid #b5e6fd;
     -webkit-transform: rotateZ(45deg)
+}
+
+.risk{
+    height: 26px;
+    width: 125px;
+    font-size: 32px;
+    font: 'Roboto';
+    color: #62ce02;
+    font-weight: 100;
+    margin-top: 75px;
+    margin-left: 30px;
+    margin-right: 63px;
 }

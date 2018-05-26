@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/styles.css">
 
 </head>
-
+<!-- https://projects.invisionapp.com/d/main/default/#/console/13735814/295672424/inspect -->
 <body>
     <div class="container-fluid">
     <div class="row">
@@ -45,83 +45,84 @@
             </div>
             <div class="rectangle-1059">
                 <div class="row">
-
-                    <div class="col-sm-6">
+                    <div class="col-sm-2">
 
                         <!-- <div id="multi" class="example" style="width: 100px;"></div> -->
                         <!--  Container  -->
+                        <!-- https://stackoverflow.com/questions/47426782/add-gradient-background-color-along-with-stroke-css?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa -->
                         <ul class="progress">
-                              <div class="back"></div>
+                            <div class="back"></div>
                             <!--  Item  -->
                             <div id="out">out of 10</div>
-                            <li data-percent="2.5">
+                            <!-- Change data-percent to see a change in radial graph and the risk text -->
+                            <li id="percentage" data-percent="2.5">
                                 <svg viewBox="-10 -10 220 220">
-                                <g fill="none" stroke-width="15" transform="translate(100,100)">
-                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                                </g>
+                                    <g fill="none" stroke-width="15" transform="translate(100,100)">
+                                        <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                                        <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+                                        <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+                                        <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+                                        <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+                                        <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+                                    </g>
                                 </svg>
+
                                 <svg viewBox="-10 -10 220 220">
-                                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="157.2"></path>
+                                    <path id="progress-length" d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="157.2"></path>
                                 </svg>
+
                             </li>
+
                         </ul>
 
                         <!--  Defining Angle Gradient Colors  -->
                         <svg width="0" height="0">
-                        <defs>
-                        <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
-                            <stop stop-color="#62ce02"/>
-                            <stop offset="100%" stop-color="#62ce02"/>
-                        </linearGradient>
-                        <linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
-                            <stop stop-color="#62ce02"/>
-                            <stop offset="100%" stop-color="#f39f09"/>
-                        </linearGradient>
-                        <linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
-                            <stop stop-color="#f39f09"/>
-                            <stop offset="100%" stop-color="#f39f09"/>
-                        </linearGradient>
-                        <linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
-                            <stop stop-color="#f39f09"/>
-                            <stop offset="100%" stop-color="#f39f09"/>
-                        </linearGradient>
-                        <linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
-                            <stop stop-color="#f39f09"/>
-                            <stop offset="100%" stop-color="#c93539"/>
-                        </linearGradient>
-                        <linearGradient id="cl6" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
-                            <stop stop-color="#c93539"/>
-                            <stop offset="100%" stop-color="#c93539"/>
-                        </linearGradient>
-                        </defs>
+                            <defs>
+                                <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+                                    <stop stop-color="#62ce02"/>
+                                    <stop offset="100%" stop-color="#62ce02"/>
+                                </linearGradient>
+                                <linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+                                    <stop stop-color="#62ce02"/>
+                                    <stop offset="100%" stop-color="#f39f09"/>
+                                </linearGradient>
+                                <linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+                                    <stop stop-color="#f39f09"/>
+                                    <stop offset="100%" stop-color="#f39f09"/>
+                                </linearGradient>
+                                <linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+                                    <stop stop-color="#f39f09"/>
+                                    <stop offset="100%" stop-color="#f39f09"/>
+                                </linearGradient>
+                                <linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+                                    <stop stop-color="#f39f09"/>
+                                    <stop offset="100%" stop-color="#c93539"/>
+                                </linearGradient>
+                                <linearGradient id="cl6" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+                                    <stop stop-color="#c93539"/>
+                                    <stop offset="100%" stop-color="#c93539"/>
+                                </linearGradient>
+                            </defs>
                         </svg>
 
                     </div>
+                    <div class="col-sm-3 risk">Low Risk</div>
 
                     <div class="col-sm-6 bar-padding">
                         <div class="row">
-                            <div id="demo-bar" class="col-sm-7">
-                            </div>
+                            <div id="demo-bar" class="col-sm-7"></div>
                             <div class="labels">
                                 <span class="col-sm-5">Volatility</span>
                             </div>
-                            <div id="demo-bar2" class="col-sm-7">
-                            </div>
+                            <div id="demo-bar2" class="col-sm-7"></div>
                             <div class="labels">
                                 <span class="col-sm-5">Correlation Risk</span>
                             </div>
-                            <div id="demo-bar3" class="col-sm-7">
-                            </div>
+                            <div id="demo-bar3" class="col-sm-7"></div>
                             <div class="labels">
                                 <span class="col-sm-5">Tail Event</span>
                             </div>
-                            <div id="demo-bar4" class="col-sm-7">
-                            </div>
+                            <div id="demo-bar4" class="col-sm-7"></div>
                             <div class="labels">
                                 <span class="col-sm-5">Concetrated Stack</span>
                             </div>
@@ -135,7 +136,7 @@
                 <script src="js/gradient-progress-bar.js"></script>
                 <script src="js/radial-progress-bar.js"></script>
 
-                <script src="js/index.js" type="text/javascript"></script>
+                <script src="js/scripts.js" type="text/javascript"></script>
 
             </div>
         </div>
