@@ -3,10 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>StratiFi</title>
+
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -32,91 +36,108 @@
                 </div>
             </div>
             <div class="rectangle-1063">
-                Your PRISM score can be lowered with <a href="">StratiFi overlays</a>. Following charts show how StratiFi Overlays can lower the risk of your portfolio with StratiFi recommended overlay blendings.    
+                Your PRISM score can be lowered with <a href="">StratiFi overlays</a>.
+                Following charts show how StratiFi Overlays can lower the risk of
+                your portfolio with StratiFi recommended overlay blendings.
             </div>
             <div class="portfolio-50-tail-risk-50-risk">
                 Portfolio + <a href="">50% Tail Risk, 50% Risk Reduction</a>
             </div>
             <div class="rectangle-1059">
                 <div class="row">
-                    <div class="col-sm-6"> AA
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="row">
 
+                    <div class="col-sm-6">
+
+                        <!-- <div id="multi" class="example" style="width: 100px;"></div> -->
+                        <!--  Container  -->
+                        <ul class="progress">
+                            <!--  Item  -->
+                            <div id="out">out of 10</div>
+                            <li data-percent="2.5">
+                                <svg viewBox="-10 -10 220 220">
+                                <g fill="none" stroke-width="15" transform="translate(100,100)">
+                                <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
+                                <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
+                                <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
+                                <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
+                                <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
+                                <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
+                                </g>
+                                </svg>
+                                <svg viewBox="-10 -10 220 220">
+                                <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="157.2"></path>
+                                </svg>
+                            </li>
+                        </ul>
+                        <!--  Defining Angle Gradient Colors  -->
+                        <svg width="0" height="0">
+                        <defs>
+                        <linearGradient id="cl1" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="1" y2="1">
+                            <stop stop-color="#62ce02"/>
+                            <stop offset="100%" stop-color="#62ce02"/>
+                        </linearGradient>
+                        <linearGradient id="cl2" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
+                            <stop stop-color="#62ce02"/>
+                            <stop offset="100%" stop-color="#f39f09"/>
+                        </linearGradient>
+                        <linearGradient id="cl3" gradientUnits="objectBoundingBox" x1="1" y1="0" x2="0" y2="1">
+                            <stop stop-color="#f39f09"/>
+                            <stop offset="100%" stop-color="#f39f09"/>
+                        </linearGradient>
+                        <linearGradient id="cl4" gradientUnits="objectBoundingBox" x1="1" y1="1" x2="0" y2="0">
+                            <stop stop-color="#f39f09"/>
+                            <stop offset="100%" stop-color="#f39f09"/>
+                        </linearGradient>
+                        <linearGradient id="cl5" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="0" y2="0">
+                            <stop stop-color="#f39f09"/>
+                            <stop offset="100%" stop-color="#c93539"/>
+                        </linearGradient>
+                        <linearGradient id="cl6" gradientUnits="objectBoundingBox" x1="0" y1="1" x2="1" y2="0">
+                            <stop stop-color="#c93539"/>
+                            <stop offset="100%" stop-color="#c93539"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>
+
+                    </div>
+
+                    <div class="col-sm-6 bar-padding">
+                        <div class="row">
                             <div id="demo-bar" class="col-sm-7">
                             </div>
                             <div class="labels">
                                 <span class="col-sm-5">Volatility</span>
                             </div>
-
-
                             <div id="demo-bar2" class="col-sm-7">
-                            </div>  
+                            </div>
                             <div class="labels">
                                 <span class="col-sm-5">Correlation Risk</span>
-                            </div>  
-
-
+                            </div>
                             <div id="demo-bar3" class="col-sm-7">
-                            </div>   
+                            </div>
                             <div class="labels">
                                 <span class="col-sm-5">Tail Event</span>
                             </div>
-
-
                             <div id="demo-bar4" class="col-sm-7">
-                            </div>  
+                            </div>
                             <div class="labels">
                                 <span class="col-sm-5">Concetrated Stack</span>
                             </div>
-                        </div>            
+                        </div>
                     </div>
                 </div>
-                        
+
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <!-- Custom JS -->
                 <script src="js/gradient-progress-bar.js"></script>
-        
-        
-                <script src="js/jquery.barfiller.js" type="text/javascript"></script>
-                <script type="text/javascript">
-                $(document).ready(function(){
-                    $('#demo-bar').gradientProgressBar({
-                        value: 1,
-                        fill: {
-                            gradient: ["#62ce02", "#62ce02","#f39f09","#f39f09", "#f39f09","#c93539", "#c93539"]
-                        }
-                    });
-            
-                    $('#demo-bar2').gradientProgressBar({
-                        value: 0.75,
-                        fill: {
-                            gradient: ["#62ce02", "#62ce02","#f39f09","#f39f09", "#f39f09", "#c93539", "#c93539"]
-                        }
-                    });
+                <script src="js/radial-progress-bar.js"></script>
 
-                    $('#demo-bar3').gradientProgressBar({
-                        value: 0.8,
-                        fill: {
-                            gradient: ["#62ce02", "#62ce02","#f39f09","#f39f09","#f39f09", "#c93539", "#c93539"]
-                        }
-                    });
-
-                    $('#demo-bar4').gradientProgressBar({
-                        value: 0.9,
-                        fill: {
-                            gradient: ["#62ce02","#62ce02", "#f39f09","#f39f09","#f39f09", "#c93539", "#c93539"],
-                        }
-                    });
-
-                    $('canvas').addClass("barfiller");
-                });
-
-                </script>
+                <script src="js/index.js" type="text/javascript"></script>
 
             </div>
         </div>
     </div>
     </div>
-<!-- <script src="js/scripts.js"></script> -->
 </body>
 </html>

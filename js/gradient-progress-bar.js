@@ -1,10 +1,10 @@
 /*
 jquery-gradient-progress-bar - jQuery Plugin to draw animated progress bars with
 gradient fill.
- 
+
 (Based on the excellent http://kottenator.github.io/jquery-circle-progress/)
 
-URL: 
+URL:
 Author: Lisandro Grassini
 Version: 1.0
 License: MIT
@@ -221,7 +221,7 @@ License: MIT
             if(this.lineCap == 'round') {
               x = this.getThickness() / 2;
             }
-            
+
             ctx.moveTo(x, y);
             ctx.lineTo(this.size * v, y);
 
