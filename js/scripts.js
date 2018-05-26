@@ -1,3 +1,6 @@
+
+//Animations for bar graph 
+
 $(document).ready( function () {
     $('#demo-bar').gradientProgressBar({
         value: 1,
@@ -28,6 +31,9 @@ $(document).ready( function () {
     });
 
     $('canvas').addClass("barfiller");
+
+    // To display risk level based on it's risk value 
+
     $('#progress-length').attr('stroke-dashoffset',parseFloat($('#percentage').attr('data-percent'))*62.9)
 
     var percent = parseFloat($("#percentage").attr("data-percent"));
